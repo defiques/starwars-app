@@ -1,0 +1,56 @@
+.homepage-wrapper {
+  background: linear-gradient(180deg, #1F2A63 0%, #17002F 100%);
+  min-height: calc(100vh - 100px);
+  display: flex;
+
+  &-block {
+    display: flex;
+    position: relative;
+  }
+
+  &-left {
+    color: #FFFFFF;
+    padding-right: 30px;
+    width: 50%;
+    &-maintext {
+      font-size: 72px;
+      line-height: 84px;
+      letter-spacing: 4px;
+      margin-bottom: 64px;
+    }
+    &-addtext {
+      font-size: 32px;
+      line-height: 37px;
+      margin-bottom: 64px;
+    }
+    &-button {
+      background: #FFC107;
+      width: 231px;
+      height: 66px;
+      color: #212121;
+      font-weight: 700;
+      border-radius: 11px;
+      box-shadow: inset 0px -8px 0px rgba(0, 0, 0, 0.18);
+      font-size: 23px;
+      transition: box-shadow .5s ease-in-out;
+      &:hover {
+        box-shadow: none
+      }
+      a {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  &-right {
+    position: absolute;
+    right: -18.98%;
+    bottom: -18.67%;
+    img {
+
+    }
+  }
+}

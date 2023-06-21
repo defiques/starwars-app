@@ -1,0 +1,94 @@
+.modal {
+  position: fixed;
+  top: calc((100vh - 371px) / 2);
+  left: calc((100vw - 797px) / 2);
+  width: 797px;
+  height: 500px;
+  opacity: 1!important;
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.ReactModal__Body--open {
+  overflow: hidden;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #21212180;
+}
+
+.modal-icon {
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+}
+
+.modal-info {
+  background: linear-gradient(180deg, #17002F 42.19%, #1F2A63 100%);
+  border-radius: 16px;
+  display: flex;
+  &-left {
+    background: #1F2A63;
+    width: 50%;
+    padding: 20px;
+    &-img {
+      margin-bottom: 10px;
+      img {width: 100%}
+    }
+  }
+  &-right {
+    padding: 30px 15px;
+    width: 50%;
+    &__title {
+      font-weight: 700;
+      font-size: 36px;
+      color: #FFF;
+      margin-bottom: 25px;
+    }
+    &__info {
+      padding: 15px 25px;
+      color: #000;
+      font-size: 16px;
+      background: #FFF;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 75px;
+    }
+    &__props {
+      display: flex;
+      gap: 23px;
+      &__item {
+        display: flex;
+        flex-direction: column;
+        background: #FFF;
+        border-radius: 8px;
+        color: #212121;
+        font-size: 16px;
+        padding: 8px 25px;
+        align-items: center;
+        &__value {
+          border-radius: 100%;
+          border: 3px solid #212121;
+          width: 50px;
+          height: 50px;
+          margin-bottom: 6px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        &__name {
+          color: #4B4B4B;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

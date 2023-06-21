@@ -1,0 +1,23 @@
+.header-wrapper {
+  background: #1F2A63;
+  padding: 10px 0;
+  box-shadow: 0 4px 16px rgba(1, 28, 64, 0.2);
+  &-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-links {
+    color: #FFF;
+    font-size: 25px;
+    a {
+      padding-bottom: 15px;
+      &:first-child {
+        margin-right: 74px;
+      }
+    }
+    .active {
+      border-bottom: 3px solid #CFDAB0;
+    }
+  }
+}
